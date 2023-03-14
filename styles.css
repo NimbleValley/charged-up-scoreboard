@@ -1,0 +1,68 @@
+html,
+body {
+    background-color: rgb(0, 42, 255);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    user-select: none;
+}
+
+#title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 100vh;
+    color: white;
+    display: relative;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin-top: -15vh;
+}
+
+.lights {
+    transition: border-right 0.25s;
+}
+
+#fancy1 {
+    position: absolute;
+    border-top: 25vw solid transparent;
+    border-bottom: 25vw solid transparent;
+    border-right: 25vw solid rgb(27, 88, 255);
+    left: -8vw;
+    top: -18vw;
+    transform: rotate(45deg);
+    scale: 0.65 1.1;
+}
+
+#fancy2 {
+    position: absolute;
+    border-top: 25vw solid transparent;
+    border-bottom: 25vw solid transparent;
+    border-right: 25vw solid rgb(27, 88, 255);
+    right: -8vw;
+    bottom: -18vw;
+    transform: rotate(45deg);
+    scale: -0.65 -1.1;
+}
+
+@keyframes flash {
+    0% {
+        border-right: 25vw solid rgb(255, 255, 255);
+    }
+
+    100% {
+        border-right: 25vw solid rgb(27, 88, 255);
+    }
+}
+
+@keyframes flash1 {
+    0% {
+        border-right: 25vw solid rgb(255, 255, 255);
+    }
+
+    100% {
+        border-right: 25vw solid rgb(27, 88, 255);
+    }
+}
