@@ -16,6 +16,7 @@ const orangeFancy = "rgb(196, 97, 10)";
 var buzzer = new Audio('sounds/buzzer.wav');
 var bzzbzzbzz = new Audio('sounds/bzzbzzbzz.wav');
 var click = new Audio('sounds/click.mp3');
+var woo = new Audio("sounds/woowooaa.wav");
 
 document.addEventListener('keypress', function (event) {
     if (event.key == "q") {
@@ -53,6 +54,11 @@ document.addEventListener('keypress', function (event) {
 
     if(event.key == "m") {
         buzzer.play();
+        return;
+    }
+
+    if(event.key == "k") {
+        woo.play();
         return;
     }
 
